@@ -1,0 +1,21 @@
+{
+  "name": "interfaz-para-exchangeratesapi",
+  "version": "1.0.0",
+  "description": "interfaz-para-exchangeratesapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dev": "cypress open",
+    "cypress-run": "cypress run"
+  },
+  "author": "Alexis Toranzo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.33",
+    "cypress": "^4.1.0"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de cambio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/jquery.datetimepicker.min.css">
+<body>
+    <h1 class="display-4 text-center">Consulte sus cambios...</h1>
+    
+    <div class="form-group">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-4">
+                    <select class="form-control" id="base">
+                        <option>Elija una base</option>
+                    </select>
+                </div>
+                <div class="col-sm-4" style="width: 400px">
+                    <input type="text" id="fecha" class="form-control" placeholder="Elija una fecha">
+                </div>
+                <div class="col-sm-2">
+                    <button type="submit" class="btn btn-primary" id="boton-siguiente">Siguiente</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="cambios-container">
+            
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="src/jquery.datetimepicker.full.min.js"></script>
+    <script src="src/index.js"></script>
+    <script>
+        jQuery.datetimepicker.setLocale('es')
+        $('#fecha').datetimepicker({
+            timepicker: false,
+            datepicker: true,
+            format: 'Y-m-d',
+            maxDate: 0,
+            minDate: '1999-01-04',
+            yearStart: '1999',
+            yearEnd: '2020',
+        })
+    </script>
+</body>
+</html>
