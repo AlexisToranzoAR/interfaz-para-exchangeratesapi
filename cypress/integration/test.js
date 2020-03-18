@@ -21,7 +21,7 @@ context('casa-de-cambio', () => {
     })
 
     it('se asegura que los resultados sean correctos', () => {
-        cy.get('#26 td').contains('USD').should('exist');
-        cy.get('#26 td').contains('1').should('exist');
+        cy.get('#cambio-26 td').contains('USD').should('exist');
+        cy.get('#cambio-26 td').contains('1').should('exist');
     })
 })
