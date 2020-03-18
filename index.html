@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa de cambio</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
 <body>
     <h1 class="display-4 text-center">Consulte sus cambios...</h1>
     
@@ -31,21 +31,10 @@
         </div>
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="src/jquery.datetimepicker.full.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
     <script src="src/index.js"></script>
-    <script>
-        jQuery.datetimepicker.setLocale('es')
-        $('#fecha').datetimepicker({
-            timepicker: false,
-            datepicker: true,
-            format: 'Y-m-d',
-            maxDate: 0,
-            minDate: '1999-01-04',
-            yearStart: '1999',
-            yearEnd: '2020',
-        })
-    </script>
+    <script src="src/datepicker.js"></script>
 </body>
 </html>
