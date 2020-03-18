@@ -1,5 +1,5 @@
-*Interfaz para exchangeratesapi
+# Interfaz para exchangeratesapi
 
-**Instalacion
+## Instalacion
 Ejecutar 'npm install'
 Se necesita de http-server para su prueba
